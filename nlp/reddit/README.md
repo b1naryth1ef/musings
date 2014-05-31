@@ -1,0 +1,1 @@
+This folder contains some scripts to poll, parse, and aggregate information on reddit comments. It uses some awesome NLP toolkits for python to do sentiment analyisis, and various other fancy things. Mostly for fun, wanted to learn some NLP and mess with reddit comments.
