@@ -8,7 +8,7 @@ class Entry(Model):
 
     cid = CharField()
     sub = CharField(index=True)
-    val = IntegerField(index=True)
+    val = FloatField(index=True)
 
 if __name__ == "__main__":
     Entry.drop_table(True)
