@@ -30,6 +30,12 @@ if __name__ == '__main__':
         e.sub = item['subreddit']
         e.val = parse_single(item['body'])
         e.cid = item['id']
+        e.body = item['body']
+        e.ups = item['ups']
+        e.downs = item['downs']
+        e.link_url = item['link_url']
+        e.link_title = item['link_title']
+        e.author = item['author']
         e.save()
         if parsed % 10 == 0:
             print "Parsed %s comments..." % parsed
