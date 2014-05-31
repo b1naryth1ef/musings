@@ -16,7 +16,7 @@ def get_unique_subs(weight=None):
     """
     q = Entry.select(Entry.sub).distinct(Entry.sub)
     if weight:
-        q = q.groub_by(Entry.sub).having(fn.Count(Entry.sub) >= weight)
+        q = q.group_by(Entry.sub).having(fn.Count(Entry.sub) >= weight)
     return map(get("sub"), list(q))
 
 def get_unique_sub_counts():
