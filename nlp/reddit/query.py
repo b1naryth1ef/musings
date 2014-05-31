@@ -45,6 +45,7 @@ def get_subs_sorted_polarity(weight=None):
         get_unique_subs(weight)
     ), key=lambda i: i[1])
 
+
 # Aggregate functions
 def ag_get_sub_polarity_extremes(amount, weight=None):
     """
@@ -56,6 +57,6 @@ def ag_get_sub_polarity_extremes(amount, weight=None):
 
 if __name__ == '__main__':
     # print "Unique Subs w/ count:\n %s" % Counter(get_unique_sub_counts())
-    polarity = ag_get_sub_polarity_extremes(5, 50)
-    print "Best Subreddits: ", polarity[0]
-    print "Worst Subreddits:", polarity[1]
+    polarity = ag_get_sub_polarity_extremes(25, 5)
+    print "Best Subreddits: ", ', '.join(map(lambda i: i[0], polarity[0]))
+    print "Worst Subreddits:", ', '.join(map(lambda i: i[0], polarity[1]))
