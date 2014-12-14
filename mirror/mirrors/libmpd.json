@@ -1,0 +1,4 @@
+{
+  "remote": "git://git.musicpd.org/master/libmpd.git",
+  "mirror": "git@github.com:mirrorit/libmpd.git"
+}
