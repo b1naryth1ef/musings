@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from peewee import *
 import time
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from kafka import KafkaClient, SimpleConsumer
 import time, sys
 
