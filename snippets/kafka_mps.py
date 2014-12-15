@@ -21,6 +21,7 @@ if __name__ == "__main__":
 
     kafka = KafkaClient("localhost:9092")
     consumer = SimpleConsumer(kafka, "kafka_mps", ' '.join(sys.argv[1:]))
+    consumer.seek(0, 2)
 
     while True:
         sys.stdout.write("\rCurrent Messages/second: %s" % measure_single(consumer))
